@@ -1,11 +1,39 @@
 .user-card{
     font-family: "Verdana", sans-serif;
-    background: #f2f2f2;
-    border: 1px solid #c5c5c5;
-    padding: 15px;
     margin: 10px;
-    border-radius: 10px;
-    border-color: rgba(223,225,229,0);
-    border-top: 5px solid #3359ec;
-    border-bottom: 6px solid #3359ec;
+    padding: 1.25rem 1.25rem 2.5rem;
+    height: auto;
+    transition: background-color .4s;
+    color: #252525;
+    border-radius: .5rem;
+    background-image: linear-gradient(0deg, #e80537 20%, #fafafa 10%);
+}
+
+.shadow-medium {
+    box-shadow: 0 4px 16px rgba(0,0,0,.2);
+  }
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.user-image{
+    position: relative;
+    margin-bottom: .75rem;
+    height: 4rem;
+}
+
+.user-image img{
+    margin-left: 3rem;
+    padding-top: 1rem;
+}
+
+.user-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2rem;
+    margin-top: 2rem;
 }
