@@ -1,39 +1,61 @@
-.user-card{
-    font-family: "Verdana", sans-serif;
-    margin: 10px;
-    padding: 1.25rem 1.25rem 2.5rem;
-    height: auto;
-    transition: background-color .4s;
-    color: #252525;
-    border-radius: .5rem;
-    background-image: linear-gradient(0deg, #e80537 20%, #fafafa 10%);
-}
+@import "~bootstrap-icons/font/bootstrap-icons.css";¼
 
 .shadow-medium {
-    box-shadow: 0 4px 16px rgba(0,0,0,.2);
-  }
-
-img{
-    display: block;
-    max-width: 100%;
-    height: auto;
+  box-shadow: 0 4px 16px rgba(0,0,0,.2);
 }
 
-.user-image{
-    position: relative;
-    margin-bottom: .75rem;
-    height: 4rem;
+.about__content {
+  row-gap: 3rem;
+  font-family: 'Raleway', sans-serif;
 }
 
-.user-image img{
-    margin-left: 3rem;
-    padding-top: 1rem;
+.about__card{
+  background-color: hsl(152, 24%, 32%);
+  border-radius: .5rem;
+}
+.about__image {
+  position: relative;
+  margin-bottom: 1.5rem;
 }
 
-.user-content{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 2rem;
-    margin-top: 2rem;
+.about__img {
+  border-radius: .5rem .5rem 0 0;
+}
+
+.about__button {
+  display: inline-flex;
+  background-color: #fff;
+  padding: 1.15rem;
+  border-radius: .5rem 0 0 0;
+  font-size: 2rem;
+  color: hsl(152, 24%, 32%);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.about__button i {
+  transform: rotate(-30deg);
+  transition: .4s;
+}
+
+.about__button:hover i {
+  transform: rotate(-30deg) translateX(.25rem);
+}
+
+.about__title,
+.about__description{
+  display: grid;
+  justify-content: center;
+  color: #fff;
+}
+
+.about__title {
+  font-size: 1.25rem;
+  margin-bottom: .75rem;
+  
+}
+
+.about__description {
+  padding-bottom: 1rem;
 }
