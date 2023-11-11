@@ -4,25 +4,25 @@
   box-shadow: 0 4px 16px rgba(0,0,0,.2);
 }
 
-.about__content {
+.user__content {
   row-gap: 3rem;
   font-family: 'Raleway', sans-serif;
 }
 
-.about__card{
+.user__card{
   background-color: hsl(152, 24%, 32%);
   border-radius: .5rem;
 }
-.about__image {
+.user__image {
   position: relative;
   margin-bottom: 1.5rem;
 }
 
-.about__img {
+.user__img {
   border-radius: .5rem .5rem 0 0;
 }
 
-.about__button {
+.user__button {
   display: inline-flex;
   background-color: #fff;
   padding: 1.15rem;
@@ -34,28 +34,28 @@
   bottom: 0;
 }
 
-.about__button i {
+.user__button i {
   transform: rotate(-30deg);
   transition: .4s;
 }
 
-.about__button:hover i {
+.user__button:hover i {
   transform: rotate(-30deg) translateX(.25rem);
 }
 
-.about__title,
-.about__description{
+.user__title,
+.user__description{
   display: grid;
   justify-content: center;
   color: #fff;
 }
 
-.about__title {
+.user__title {
   font-size: 1.25rem;
   margin-bottom: .75rem;
   
 }
 
-.about__description {
+.user__description {
   padding-bottom: 1rem;
 }
