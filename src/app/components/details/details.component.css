@@ -5,8 +5,8 @@
 .details__card {
   padding: 1rem 1rem 2rem;
   transition: background-color 0.4s;
-  color: var(--dark-color);
-  background-color: var(--white-color);
+  color: var(--second-color);
+  background-color: var(--container-color);
 }
 
 .details__image {
@@ -60,8 +60,8 @@
 }
 
 .details__card:hover {
-  background-color: var(--container-color);
-  color: var(--second-color);
+  background-color: var(--white-color);
+  color: var(--dark-color);
 }
 
 .details__container {
