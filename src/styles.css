@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap-icons/font/bootstrap-icons.css";
-@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;600&display=swap");
 
 :root {
   /*========== Colors ==========*/
@@ -9,15 +9,49 @@
   --first-color-light: hsl(38, 100%, 78%);
   --second-color: hsl(195, 75%, 52%);
   --dark-color: hsl(212, 40%, 12%);
-  --white-color: hsl(212, 4%, 95%);
-  --body-color: hsl(32, 75%, 50%);
+  --white-color: #fafafa;
+  --body-color: hsl(32, 75%, 55%);
   --container-color: hsl(212, 42%, 20%);
 
-  /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: "Bai Jamjuree", sans-serif;
+  --body-font: "Raleway", sans-serif;
+  --biggest-font-size: 2.5rem;
+  --h1-font-size: 1.75rem;
   --h2-font-size: 1.25rem;
-  --normal-font-size: 1rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+  --tiny-font-size: .625rem;
+
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  --mb-0-25: .25rem;
+  --mb-0-75: .75rem;
+  --mb-1: .5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+
+ --z-tooltip: 10;
+ --z-fixed: 100;
+ --z-modal: 1000;
+}
+
+@media screen and (min-width: 1150px) {
+  :root {
+    --biggest-font-size: 4.5rem;
+    --h1-font-size: 3rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
 }
 
 * {
@@ -26,15 +60,32 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--white-color);
+  transition: background-color 0.4s;
 }
 
 a {
   text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--black-color);
+  font-weight: var(--font-bold);
+}
+
+ul {
+  list-style: none;
 }
 
 img {
@@ -43,6 +94,71 @@ img {
   height: auto;
 }
 
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.main {
+  overflow: hidden;
+}
+
 .shadow-medium {
   box-shadow: 4px 4px 16px rgba(0,0,0,.2);
+}
+
+.section {
+  padding-block: 4rem 2rem;
+}
+
+.container {
+  max-width: 1120px;
+  margin-inline: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.card__button {
+  display: inline-block;
+  background-color: var(--first-color);
+  padding: .75rem 1.5rem;
+  border-radius: .25rem;
+  color: var(--dark-color);
+  font-weight: 600;
+}
+
+.card__button-icon{
+  padding-right: .5rem;
+}
+
+@media screen and (max-width: 340px) {
+  .container {
+    margin-inline: 1rem;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .container {
+    margin-inline: auto;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .container {
+    margin-inline: 1rem;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .container {
+    margin-inline: auto;
+  }
+
+  .section {
+    padding-block: 7rem 2rem;
+  }
 }
