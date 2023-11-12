@@ -1,59 +1,83 @@
-.shadow-medium {
-  box-shadow: 0 4px 16px rgba(0,0,0,.2);
-}
-
-.user__content {
-  row-gap: 3rem;
-  font-family: 'Raleway', sans-serif;
-}
-
-.user__card{
-  background-color: hsl(152, 24%, 32%);
-  border-radius: .5rem;
-}
-.user__image {
-  position: relative;
-  margin-bottom: 1.5rem;
-}
-
-.user__img {
-  border-radius: .5rem .5rem 0 0;
-}
-
-.user__button {
-  display: inline-flex;
-  background-color: #fff;
-  padding: 1.15rem;
-  border-radius: .5rem 0 0 0;
-  font-size: 2rem;
-  color: hsl(152, 24%, 32%);
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-
-.user__button i {
-  transform: rotate(-30deg);
-  transition: .4s;
-}
-
-.user__button:hover i {
-  transform: rotate(-30deg) translateX(.25rem);
-}
-
-.user__title,
-.user__description{
-  display: grid;
+.container {
+  display: flex;
   justify-content: center;
-  color: #fff;
+  align-items: center;
+  /* height: 100vh; */
 }
 
-.user__title {
-  font-size: 1.25rem;
+.card__container {
+  padding-block: 5rem;
+}
+
+.card__content {
+  margin-inline: 1.75rem;
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+
+.card__article {
+  width: 300px; /* Remove after adding swiper js */
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+
+.card__image {
+  position: relative;
+  /* background-color: var(--first-color-light); */
+  /* padding-top: 1.5rem; */
+  margin-bottom: -.75rem;
+}
+
+.card__data {
+  background-color: var(--container-color);
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+.card__img {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
+}
+
+.card__shadow {
+  width: 200px;
+  height: 200px;
+  background-color: var(--first-color-alt);
+  border-radius: 50%;
+  position: absolute;
+  top: 3.75rem;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  filter: blur(45px);
+}
+
+.card__name {
+  font-size: var(--h2-font-size);
+  color: var(--second-color);
   margin-bottom: .75rem;
-  
 }
 
-.user__description {
-  padding-bottom: 1rem;
+.card__description {
+  font-weight: 500;
+  margin-bottom: 1.75rem;
+  color: var(--white-color);
+}
+
+.card__button {
+  display: inline-block;
+  background-color: var(--first-color);
+  padding: .75rem 1.5rem;
+  border-radius: .25rem;
+  color: var(--dark-color);
+  font-weight: 600;
+}
+
+.card__button-icon{
+  padding-right: .5rem;
 }

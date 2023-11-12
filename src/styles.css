@@ -1,28 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap-icons/font/bootstrap-icons.css";
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&display=swap");
 
-*,
-::before,
-::after {
-  box-sizing: border-box;
+:root {
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: hsl(38, 92%, 58%);
+  --first-color-light: hsl(38, 100%, 78%);
+  --second-color: hsl(195, 75%, 52%);
+  --dark-color: hsl(212, 40%, 12%);
+  --white-color: hsl(212, 4%, 95%);
+  --body-color: hsl(32, 75%, 50%);
+  --container-color: hsl(212, 42%, 20%);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Bai Jamjuree", sans-serif;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: 1rem;
 }
 
-html {
-  scroll-behavior: smooth;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-  margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
-  color: var(--text-color);
-  line-height: 1.6;
-}
-
-h2,
-p {
-  margin: 0;
+  color: var(--white-color);
 }
 
 a {
@@ -30,6 +38,11 @@ a {
 }
 
 img {
+  display: block;
   max-width: 100%;
   height: auto;
+}
+
+.shadow-medium {
+  box-shadow: 4px 4px 16px rgba(0,0,0,.2);
 }

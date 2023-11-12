@@ -1,22 +1,23 @@
-<div class="user__content">
-  <article class="user__card shadow-medium">
-    <div class="user__image">
-        <img 
-          src="https://rickandmortyapi.com/api/character/avatar/361.jpeg" 
-          alt="User card" 
-          class="user__img">
-        <a routerLink="/details" class="user__button">
-          <i class="bi bi-arrow-right"></i>
-        </a>
-    </div>
-
-    <div class="user__data">
-        <h2 class="user__title">
-          Name: Toxic Rick
-        </h2>
-        <p class="user__description">
-          Type: Rick's Toxic Side
-        </p>
-    </div>
-</article>
-</div>
+<section class="container">
+  <div class="card__container swiper">
+     <div class="card__content shadow-medium">
+        <div class="swiper-wrapper">
+           <article class="card__article swiper-slide">
+              <div class="card__image">
+                 <img src="https://rickandmortyapi.com/api/character/avatar/361.jpeg" alt="image" class="card__img">
+                 <div class="card__shadow"></div>
+              </div>
+              <div class="card__data">
+                 <h3 class="card__name">Toxic Rick</h3>
+                 <p class="card__description">
+                    Humanoid
+                 </p>
+                 <a routerLink="/details" class="card__button">
+                  <i class="bi bi-info-circle-fill card__button-icon"></i>View More
+                </a>
+              </div>
+           </article>  
+        </div>
+     </div>
+  </div>
+</section>
