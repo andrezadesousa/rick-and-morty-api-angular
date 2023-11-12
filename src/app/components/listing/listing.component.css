@@ -4,3 +4,33 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
+@media (max-width: 500px){
+    nav{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .navbar-brand {
+        margin-left: -2rem;
+        margin-right: -5rem;
+    }
+
+    .form-control{
+        padding-left: 6rem;
+    }
+}
+
+@media (max-width: 700px){
+    nav{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .navbar-brand {
+        margin-left: -2rem;
+        margin-right: -5rem;
+    }
+
+    .form-control{
+        padding-left: 20rem;
+    }
+}
