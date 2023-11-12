@@ -1,27 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 @import "~bootstrap-icons/font/bootstrap-icons.css";
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-*{
+*,::before,::after{
   box-sizing: border-box;
-  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+body{
+  margin: 3rem 0 0 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: .938rem;
+  background-color: #FBFEFD;
+  color: #707070;
+  line-height: 1.6;
+}
+
+h1,h2,h3,p,ul{
   margin: 0;
 }
 
-body{
-  font-family: 'Poppins', sans-serif;
-  font-size: .938rem;
-}
-
-body{
-  margin: 3.5rem 0 0 0;
-  background-color: hsl(152, 0%, 100%);
-  color: hsl(152, 4%, 35%);
-  transition: .4s; /*For animation dark mode*/
-}
-
-h2{
-  color: hsl(152, 4%, 15%);
-  font-weight: 600;
+ul{
+  padding: 0;
+  list-style: none;
 }
 
 a{
@@ -33,141 +37,121 @@ img{
   height: auto;
 }
 
-/*=============== REUSABLE CSS CLASSES ===============*/
+/*========== CLASS CSS ==========*/
 .section{
-  padding: 5.5rem 0 1rem;
+  padding: 4rem 0 2rem;
 }
 
-.section__title{
-  font-size: 2.5rem;
-  margin-bottom:2rem;
-  line-height: 140%;
+.section-title, .section-subtitle{
+  text-align: center;
 }
 
-.container{
-  max-width: 968px;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+.section-title{
+  font-size: 2rem;
+  color: #393939;
+  margin-bottom: 1.5rem;
 }
 
-.grid{
+.section-subtitle{
+  font-size: 1.5rem;
+  display: block;
+  color: #069C54;
+  font-weight: 500;
+  margin-bottom: .5rem;
+}
+
+/*========== LAYOUT ==========*/
+.bd-container{
+  max-width: 960px;
+  width: calc(100% - 2rem);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.bd-grid{
   display: grid;
+  gap: 1.5rem;
 }
 
-.main{
-  overflow: hidden; /*For animation*/
+.l-header{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #FBFEFD;
 }
 
-.button__icon{
+.button{
+  display: inline-block;
+  background-color: #069C54;
+  color: #FFF;
+  padding: .75rem 1rem;
+  border-radius: .5rem;
   transition: .3s;
 }
 
-.button__icon{
-  transform: translateX(.25rem);
+.button:hover{
+  background-color: #048654;
 }
 
-.button--flex{
-  display: inline-flex;
-  align-items: center;
-  column-gap: .5rem;
+.about__data{
+  text-align: center;
 }
 
-.button--link{
-  color: hsl(152, 24%, 32%);
-  font-weight: 500;
-}
-
-.button--link:hover .button__icon{
-  transform: translateX(.25rem);
-}
-
-.about__container{
-  row-gap: 2rem;
-}
-
-.about__img{
-  width: 280px;
-  justify-self: center;
-  border-radius: 1rem;
-}
-
-.about__title{
-  margin-bottom: 1rem;
+.about__description-text{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .about__description{
-  margin-bottom:2rem;
-}
-
-.about__details{
-  display: grid;
-  row-gap: 1rem;
-  margin-bottom: 2.5rem;
-}
-
-.about__details-description{
-  display: inline-flex;
-  column-gap: .5rem;
-  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .about__details-icon{
   font-size: 1.1rem;
-  color: hsl(152, 24%, 32%);
+  color: #048654;
   margin-top: .15rem;
 }
 
-::-webkit-scrollbar{
-  width: .6rem;
-  background: hsl(152, 4%, 53%);
-}
-
-::-webkit-scrollbar-thumb{
-  background: hsl(152, 4%, 29%);
+.about__img{
+  width: 280px;
   border-radius: .5rem;
+  justify-self: center;
 }
 
-/*=============== BREAKPOINTS ===============*/
-/* For small devices */
-@media screen and (max-width: 320px){
-  .container{
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-}
-
-
-@media screen and (min-width: 767px){
-  body{
-    margin: 0;
-  }
-
+@media screen and (min-width: 576px){
   .about__container{
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* For large devices */
-@media screen and (min-width: 992px){
-  .container{
-    margin-left: auto;
-    margin-right: auto;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
   }
 
-  .section{
-    padding: 8rem 0 1rem;
-  }
-  .section__title,
-  .section__title-center{
-    font-size: 2.2rem;
+  .about__data, .about__initial{
+    text-align: initial;
   }
 
   .about__img{
     width: 380px;
+    order: -1;
   }
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 768px){
+  body{
+    margin: 0;
+  }
+
+  .section{
+    padding-top: 8rem;
+  }
+}
+
+@media screen and (min-width: 960px){
+  .bd-container{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .about__container{
     column-gap: 7rem;
   }

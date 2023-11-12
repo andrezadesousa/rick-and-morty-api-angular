@@ -1,46 +1,37 @@
 <body>
-  <main class="main">
-    <section class="about section container" id="about">
-      <div class="about__container grid">
-        <img src="https://rickandmortyapi.com/api/character/avatar/361.jpeg" alt="" class="about__img" />
-
+  <main class="l-main">
+    <section class="about section bd-container" id="about">
+      <div class="about__container bd-grid">
         <div class="about__data">
-          <h2 class="section__title about__title">
-            About Toxic Rick 
+          <span class="section-subtitle about__initial">About the character</span>
+          <h2 class="section-title about__initial">
+            Toxic Rick <br />
+            Rick's Toxic Side
           </h2>
-
-          <!-- <p class="about__description">
-            We have over 4000+ unbiased reviews and our customers trust our
-            plant process and delivery service every time
-          </p> -->
-
-          <div class="about__details">
-            <p class="about__details-description">
-              <i class="bi bi-bookmark-check-fill about__details-icon"></i>
-              "status": "Dead",
-            </p>
-            <p class="about__details-description">
-              <i class="bi bi-bookmark-check-fill about__details-icon"></i>
-              "species": "Humanoid",
-            </p>
-            <p class="about__details-description">
-              <i class="bi bi-bookmark-check-fill about__details-icon"></i>
-              "type": "Rick's Toxic Side",
-            </p>
-            <p class="about__details-description">
-              <i class="bi bi-bookmark-check-fill about__details-icon"></i>
-              Origin: "Alien Spa",
-            </p>
-            <p class="about__details-description">
-              <i class="bi bi-bookmark-check-fill about__details-icon"></i>
-              "location": "Earth",
-            </p>
+          <div class="about__description-text">
+            <p class="about__description">
+                <i class="bi bi-bookmark-check-fill about__details-icon"></i>
+                  Species: Humanoid
+              </p>
+              <p class="about__description">
+                <i class="bi bi-bookmark-check-fill about__details-icon"></i>
+                  Origin: Alien Spa
+              </p>
+              <p class="about__description">
+                <i class="bi bi-bookmark-check-fill about__details-icon"></i>
+                Location: Earth
+              </p>
+              <p class="about__description">
+                <i class="bi bi-bookmark-check-fill about__details-icon"></i>
+                  Created: Humanoid
+              </p>
+              
           </div>
-
-          <a href="#" class="button--link button--flex">
-            Shop Now <i class="ri-arrow-right-down-line button__icon"></i>
-          </a>
+          <a routerLink="/listing" class="button">View card</a>
+          
         </div>
+
+        <img src="https://rickandmortyapi.com/api/character/avatar/361.jpeg" alt="" class="about__img" />
       </div>
     </section>
   </main>
