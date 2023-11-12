@@ -1,10 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;600&display=swap");
 
 :root {
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
   --first-color: hsl(38, 92%, 58%);
   --first-color-light: hsl(38, 100%, 78%);
   --second-color: hsl(195, 75%, 52%);
@@ -14,43 +11,21 @@
   --container-color: hsl(212, 42%, 20%);
 
   --body-font: "Raleway", sans-serif;
-  --biggest-font-size: 2.5rem;
-  --h1-font-size: 1.75rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1.125rem;
   --normal-font-size: 0.938rem;
   --small-font-size: 0.813rem;
-  --smaller-font-size: 0.75rem;
-  --tiny-font-size: .625rem;
 
-  --font-regular: 400;
   --font-medium: 500;
-  --font-semi-bold: 600;
   --font-bold: 700;
-
-  --mb-0-25: .25rem;
-  --mb-0-75: .75rem;
-  --mb-1: .5rem;
-  --mb-2: 1rem;
-  --mb-3: 1.5rem;
-  --mb-4: 2rem;
-  --mb-5: 2.5rem;
-  --mb-6: 3rem;
-
- --z-tooltip: 10;
- --z-fixed: 100;
- --z-modal: 1000;
 }
 
 @media screen and (min-width: 1150px) {
   :root {
-    --biggest-font-size: 4.5rem;
-    --h1-font-size: 3rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
     --small-font-size: 0.875rem;
-    --smaller-font-size: 0.813rem;
   }
 }
 
@@ -108,10 +83,6 @@ button {
   box-shadow: 4px 4px 16px rgba(0,0,0,.2);
 }
 
-.section {
-  padding-block: 4rem 2rem;
-}
-
 .container {
   max-width: 1120px;
   margin-inline: 1.5rem;
@@ -156,9 +127,5 @@ button {
 @media screen and (min-width: 1150px) {
   .container {
     margin-inline: auto;
-  }
-
-  .section {
-    padding-block: 7rem 2rem;
   }
 }
