@@ -7,6 +7,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ListingComponent } from './components/listing/listing.component';
 import { UserCardComponent } from './components/user-card/user-card.component';
 import { DetailsComponent } from './components/details/details.component';
+import { SigninComponent } from './components/signin/signin.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { DetailsComponent } from './components/details/details.component';
     ListingComponent,
     UserCardComponent,
     DetailsComponent,
+    SigninComponent,
   ],
   imports: [
     BrowserModule,
