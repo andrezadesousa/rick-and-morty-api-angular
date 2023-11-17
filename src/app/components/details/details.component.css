@@ -7,6 +7,7 @@
   transition: background-color 0.4s;
   color: var(--second-color);
   background-color: var(--container-color);
+  height: 50rem;
 }
 
 .details__image {
@@ -76,12 +77,11 @@
   display: grid;
   flex-wrap: wrap;
   gap: 1rem;
-  grid-template-columns: repeat(2, 150px);
+  grid-template-columns: repeat(2, 160px);
 }
 
 .card__button{
-  margin-left: 4rem;
-  margin-top: 1rem;
+  margin: 2rem 4rem;
 }
 
 

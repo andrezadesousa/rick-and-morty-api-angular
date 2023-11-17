@@ -1,1 +1,15 @@
-<p>listing-details works!</p>
+<app-nav-bar></app-nav-bar>
+<div class="listing__details-card">
+  <app-details
+  *ngFor="let avatar of rickService.avatars; index as i"
+  [avatar]="avatar.name"
+  [type]="avatar.type"
+  [species]="avatar.species"
+  [status]="avatar.status"
+  [gender]="avatar.gender"
+  [origin]="avatar.origin.name"
+  [location]="avatar.location.name"
+  [created]="avatar.created"
+  [numero]="i + 1"
+></app-details>
+</div>

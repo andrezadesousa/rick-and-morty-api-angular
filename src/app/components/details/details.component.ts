@@ -5,6 +5,7 @@ import { Component, Input } from '@angular/core';
   templateUrl: './details.component.html',
   styleUrls: ['./details.component.css']
 })
+
 export class DetailsComponent {
   @Input()
   species!: string;
