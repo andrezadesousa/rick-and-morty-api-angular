@@ -4,13 +4,13 @@
         <div class="swiper-wrapper">
            <article class="card__article swiper-slide">
               <div class="card__image">
-                 <img src="https://rickandmortyapi.com/api/character/avatar/361.jpeg" alt="image" class="card__img">
+                 <img [src]="pegarImagemPokemon()" alt="image" class="card__img">
                  <div class="card__shadow"></div>
               </div>
               <div class="card__data">
                  <h3 class="card__name">{{pokemon}}</h3>
                  <p class="card__description">
-                    Humanoid
+                  {{ species }}
                  </p>
                  <a routerLink="/details" class="card__button">
                   <i class="bi bi-info-circle-fill card__button-icon"></i>View More

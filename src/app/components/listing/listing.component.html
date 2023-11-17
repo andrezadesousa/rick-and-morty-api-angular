@@ -1,4 +1,6 @@
-<nav class="navbar navbar-light bg-light justify-content-between sr-only sr-only-focusable">
+<nav
+  class="navbar navbar-light bg-light justify-content-between sr-only sr-only-focusable"
+>
   <a class="navbar-brand px-5">Andreza</a>
   <form class="inline-block d-flex px-5">
     <input
@@ -14,5 +16,10 @@
 </nav>
 
 <div class="listing">
-  <app-user-card></app-user-card>
+  <app-user-card
+    *ngFor="let pokemon of pokemonService.pokemons; index as i"
+    [pokemon]="pokemon.name"
+    [species]="pokemon.species"
+    [numero]="i + 1"
+  ></app-user-card>
 </div>

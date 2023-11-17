@@ -11,7 +11,10 @@ export class UserCardComponent {
   pokemon!: string;
 
   @Input()
-  status!: string;
+  name!: string;
+
+  @Input()
+  species!: string;
 
   @Input()
   numero!: number;
@@ -31,5 +34,4 @@ export class UserCardComponent {
 
     return s;
   }
-
 }
