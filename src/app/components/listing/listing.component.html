@@ -17,9 +17,9 @@
 
 <div class="listing">
   <app-user-card
-    *ngFor="let pokemon of pokemonService.pokemons; index as i"
-    [pokemon]="pokemon.name"
-    [species]="pokemon.species"
+    *ngFor="let avatar of rickService.avatars; index as i"
+    [avatar]="avatar.name"
+    [species]="avatar.species"
     [numero]="i + 1"
   ></app-user-card>
 </div>

@@ -8,18 +8,18 @@ import { Component, Input } from '@angular/core';
 export class UserCardComponent {
 
   @Input()
-  pokemon!: string;
-
-  @Input()
-  name!: string;
+  avatar!: string;
 
   @Input()
   species!: string;
 
   @Input()
+  name!: string;
+  
+  @Input()
   numero!: number;
 
-  pegarImagemPokemon(){
+  pegarImagemAvatar(){
     const numeroFormatado = this.leadingZero(this.numero);
 
     return `https://rickandmortyapi.com/api/character/avatar/${numeroFormatado}.jpeg`

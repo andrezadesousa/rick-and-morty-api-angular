@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PokemonService } from '../services/pokemon.service';
+import { RickService } from '../services/rick.service';
 
 @Component({
   selector: 'app-listing',
@@ -7,5 +7,5 @@ import { PokemonService } from '../services/pokemon.service';
   styleUrls: ['./listing.component.css']
 })
 export class ListingComponent {
-  constructor(public pokemonService: PokemonService){}
+  constructor(public rickService: RickService){}
 }
