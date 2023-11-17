@@ -5,19 +5,30 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ApiService {
-  character!: any[]
+  // character!: any[]
+  pokemons!: any[]
 
   constructor(private httpCliente: HttpClient) { 
-    this.carregarCharacter()
+    // this.carregarCharacter()
+    this.carregarPokemons()
   }
 
-  async carregarCharacter() {
+  async carregarPokemons() {
     const requisicao = await this.httpCliente
-      .get<any>('https://rickandmortyapi.com/api/character')
+
+    .get<any>('https://rickandmortyapi.com/api/character')
       .toPromise();
 
-      this.character = requisicao.results;
+      this.pokemons = requisicao.results;
       
-      console.log(this.character);
+      console.log(this.pokemons);
   }
+
+  //     .get<any>('https://rickandmortyapi.com/api/character')
+  //     .toPromise();
+
+  //     this.character = requisicao.results;
+      
+  //     console.log(this.character);
+  // }
 }

@@ -8,7 +8,7 @@ import { Component, Input } from '@angular/core';
 export class UserCardComponent {
 
   @Input()
-  character!: string;
+  pokemon!: string;
 
   @Input()
   status!: string;
@@ -16,7 +16,7 @@ export class UserCardComponent {
   @Input()
   numero!: number;
 
-  pegarImagemCharacter(){
+  pegarImagemPokemon(){
     const numeroFormatado = this.leadingZero(this.numero);
 
     return `https://rickandmortyapi.com/api/character/avatar/${numeroFormatado}.jpeg`
