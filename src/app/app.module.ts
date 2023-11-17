@@ -11,6 +11,7 @@ import { UserCardComponent } from './components/user-card/user-card.component';
 import { DetailsComponent } from './components/details/details.component';
 import { SigninComponent } from './components/signin/signin.component';
 import { RickService } from './components/services/rick.service';
+import { ListingDetailsComponent } from './components/listing-details/listing-details.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { RickService } from './components/services/rick.service';
     UserCardComponent,
     DetailsComponent,
     SigninComponent,
+    ListingDetailsComponent,
   ],
   imports: [
     BrowserModule,

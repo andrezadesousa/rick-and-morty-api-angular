@@ -3,16 +3,16 @@
     <article class="details__card shadow-medium">
       <div class="details__image">
         <img
-          src="https://rickandmortyapi.com/api/character/avatar/361.jpeg"
+          [src]="pegarImagemAvatar()"
           class="details__img"
           alt=""
         />
       </div>
 
       <div class="details__content">
-        <h3 class="details__subtitle">Humanoid</h3>
-        <h2 class="details__title">Toxic Rick</h2>
-        <p class="details__description">Rick's Toxic Side</p>
+        <h3 class="details__subtitle">{{species}}</h3>
+        <h2 class="details__title">{{avatar}}</h2>
+        <p class="details__description">{{type}}</p>
       </div>
 
       <div class="details__buttons">
