@@ -2,9 +2,12 @@
 
 <div class="listing">
   <app-user-card
-    *ngFor="let avatar of rickService.avatars; index as i"
+    *ngFor="let avatar of rickService.filteredList; index as i"
     [avatar]="avatar.name"
     [species]="avatar.species"
     [numero]="i + 1"
+    [id]="avatar.id"
+    [image]="avatar.image"
   ></app-user-card>
+  <button type="button" (click)="loadMore()" class="btn">Load More</button>
 </div>

@@ -1,12 +1,8 @@
-<section class="details" >
+<section class="details">
   <div class="details__container container grid">
     <article class="details__card shadow-medium">
       <div class="details__image">
-        <img
-          [src]="pegarImagemAvatar()"
-          class="details__img"
-          alt=""
-        />
+        <img [src]="image" class="details__img" alt="" />
       </div>
 
       <a routerLink="/listing" class="card__button">
@@ -14,30 +10,30 @@
       </a>
 
       <div class="details__content">
-        <h3 class="details__subtitle">{{species}}</h3>
-        <h2 class="details__title">{{avatar}}</h2>
-        <p class="details__description">{{type}}</p>
+        <h3 class="details__subtitle">{{ species }}</h3>
+        <h2 class="details__title">{{ avatar }}</h2>
+        <p class="details__description">{{ type }}</p>
       </div>
 
       <div class="details__buttons">
         <a class="details__link">
-          <i class="bi bi-info-circle-fill"></i>{{status}}
+          <i class="bi bi-info-circle-fill"></i>{{ status }}
         </a>
 
         <a class="details__link">
-          <i class="bi bi-gender-ambiguous"></i>{{gender}}
+          <i class="bi bi-gender-ambiguous"></i>{{ gender }}
         </a>
 
         <a class="details__link">
-          <i class="bi bi-info-circle-fill"></i>{{origin}}
+          <i class="bi bi-info-circle-fill"></i>{{ origin }}
         </a>
 
         <a class="details__link">
-          <i class="bi bi-globe-americas"></i>{{location}}
+          <i class="bi bi-globe-americas"></i>{{ location }}
         </a>
 
         <a href="#/" class="details__link">
-          <i class="bi bi-calendar-week"></i>{{created}}
+          <i class="bi bi-calendar-week"></i>{{ created }}
         </a>
       </div>
     </article>

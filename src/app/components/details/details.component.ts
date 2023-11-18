@@ -1,11 +1,10 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-details',
   templateUrl: './details.component.html',
-  styleUrls: ['./details.component.css']
+  styleUrls: ['./details.component.css'],
 })
-
 export class DetailsComponent {
   @Input()
   species!: string;
@@ -30,14 +29,17 @@ export class DetailsComponent {
 
   @Input()
   created!: string;
-  
+
   @Input()
   numero!: number;
 
-  pegarImagemAvatar(){
+  @Input()
+  image!: string;
+
+  pegarImagemAvatar() {
     const numeroFormatado = this.leadingZero(this.numero);
 
-    return `https://rickandmortyapi.com/api/character/avatar/${numeroFormatado}.jpeg`
+    return `https://rickandmortyapi.com/api/character/avatar/${numeroFormatado}.jpeg`;
   }
 
   leadingZero(str: string | number, size = 1): string {
@@ -49,5 +51,4 @@ export class DetailsComponent {
 
     return s;
   }
-
 }

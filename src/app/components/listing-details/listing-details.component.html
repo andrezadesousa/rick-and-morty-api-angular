@@ -1,15 +1,15 @@
 <app-nav-bar></app-nav-bar>
 <div class="listing__details-card">
   <app-details
-  *ngFor="let avatar of rickService.avatars; index as i"
-  [avatar]="avatar.name"
-  [type]="avatar.type"
-  [species]="avatar.species"
-  [status]="avatar.status"
-  [gender]="avatar.gender"
-  [origin]="avatar.origin.name"
-  [location]="avatar.location.name"
-  [created]="avatar.created"
-  [numero]="i + 1"
-></app-details>
+    [avatar]="personagem.name"
+    [type]="personagem.type"
+    [species]="personagem.species"
+    [status]="personagem.status"
+    [gender]="personagem.gender"
+    [origin]="personagem.origin.name"
+    [location]="personagem.location.name"
+    [created]="personagem.created"
+    [location]="personagem.location.name"
+    [image]="personagem.image"
+  ></app-details>
 </div>
